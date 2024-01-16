@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('enlaces', function (Blueprint $table) {
             $table->id();
+            $table->string('descripcion');
+            $table->dateTime('fechadcreacion');
             $table->timestamps();
         });
     }

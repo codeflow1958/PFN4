@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('personas', function (Blueprint $table) {
             $table->id();
+            $table->string('primer_nombre');
+            $table->string('apellido');
+            $table->dateTime('fechadcreacion');
             $table->timestamps();
         });
     }
